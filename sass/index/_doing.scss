@@ -1,0 +1,63 @@
+/* СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.section-doing {
+  margin-top: -94px;
+
+  &__main-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.doing-item {
+  &__thumb {
+    position: relative;
+  }
+
+  &__thumb:before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+  }
+
+  &__title-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 27px 0;
+    text-align: center;
+    width: 100%;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__title {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  & img {
+    display: block;
+  }
+}

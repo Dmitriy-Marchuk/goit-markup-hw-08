@@ -1,0 +1,42 @@
+/* ОБЩИЕ СТИЛИ */
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  font-family: $primary-font;
+  color: $primary-text-color;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding-inline-start: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* УТИЛИТЫ */
+.container {
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}

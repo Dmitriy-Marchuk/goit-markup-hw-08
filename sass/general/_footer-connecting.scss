@@ -1,0 +1,56 @@
+/* FOOTER ПРИСОЕДИНЯЙТЕСЬ */
+.connecting-box {
+  display: inline-flex;
+  flex-direction: column;
+
+  margin-top: 12px;
+  margin-left: 70px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+
+    margin-top: 20px;
+  }
+  &__list li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.connecting-item {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    background: $connecting-item-color;
+
+    border-radius: 50%;
+
+    transition: 250ms $animation-cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-text-color;
+    fill: #ffffff;
+  }
+
+  &__icon {
+    fill: #ffffff;
+  }
+}
