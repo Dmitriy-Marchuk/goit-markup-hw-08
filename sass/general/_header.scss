@@ -1,96 +1,53 @@
-/* HEADER */
+.header-phone-menu-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  & .icon-menu-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
 .page-header {
-  border-bottom: 1px solid #ececec;
-
-  & .link {
-    font-family: $primary-font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-
-  &__box {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
+  position: relative;
+  // &__box {
+  //   position: relative;
+  // }
 }
 
-/* HEADER NAV */
-.site-nav {
-  display: flex;
-  margin-left: 93px;
+.menu-container {
+  text-align: center;
+  background-color: violet;
 
-  & .item + .item {
-    margin-left: 50px;
-  }
-
-  &__link {
-    color: rgba(33, 33, 33, 1);
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: 250ms $animation-cubic;
-  }
-
-  &__link.current {
-    color: $accent-text-color;
-    position: relative;
-  }
-
-  &__link.current::before {
-    bottom: 0;
+  @media screen and (max-width: 767px) {
+    &.is-open {
+      display: block;
+    }
+    display: none;
     position: absolute;
-    display: inline-block;
-    content: "";
+    top: 100%;
+    left: 0;
     width: 100%;
-    height: 4px;
-
-    background-color: $accent-text-color;
-    border-radius: 2px;
-  }
-
-  &__link:focus,
-  &__link:hover {
-    color: $accent-text-color;
-  }
-}
-
-/* HEADER CONTACT */
-.header-contact {
-  display: flex;
-  margin-left: auto;
-
-  & .item + .item {
-    margin-left: 50px;
-  }
-
-  &__item {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    fill: #757575;
-  }
-
-  &__link {
-    color: $secondary-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: 250ms $animation-cubic;
-  }
-
-  &__link:focus,
-  &__link:hover {
-    color: $accent-text-color;
-  }
-
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
   }
 }

@@ -11,8 +11,13 @@
 
   text-align: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
     font-weight: 900;
@@ -24,6 +29,11 @@
 
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 
   &__button {
