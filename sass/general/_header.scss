@@ -6,7 +6,9 @@
 }
 
 .menu-button {
-  display: inline-flex;
+  // display: inline-flex;
+  // position: absolute;
+  z-index: 9;
   margin: 0;
   padding: 0;
   border: none;
@@ -44,14 +46,16 @@
 .menu-container {
   text-align: center;
   background-color: violet;
+  height: 100vh;
 
   @media screen and (max-width: 767px) {
     &.is-open {
       display: block;
     }
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    bottom: 0;
     left: 0;
     width: 100%;
   }
