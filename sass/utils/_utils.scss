@@ -1,12 +1,14 @@
 /* ОБЩИЕ СТИЛИ */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 body {
   background-color: $bg-color;
   font-family: $primary-font;
   color: $primary-text-color;
   margin: 0 auto;
+  height: 100%;
 }
 a {
   text-decoration: none;

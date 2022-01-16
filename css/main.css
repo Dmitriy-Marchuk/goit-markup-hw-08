@@ -8,6 +8,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   font-family: roboto, sans-serif;
   color: #212121;
   margin: 0 auto;
+  height: 100%;
 }
 
 a {
@@ -143,27 +145,51 @@ ul {
   display: none;
 }
 
-.page-header {
+.page-header__box {
   position: relative;
 }
 
 .menu-container {
   text-align: center;
-  background-color: violet;
+  background-color: #fff;
   height: 100vh;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
     left: 0;
     width: 100%;
   }
   .menu-container.is-open {
     display: block;
   }
+}
+
+.site-nav {
+  text-align: start;
+}
+
+.site-nav__item {
+  margin-bottom: 32px;
+}
+
+.site-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.site-nav__link.current {
+  color: #2196f3;
+  position: relative;
 }
 
 /* FOOTER */

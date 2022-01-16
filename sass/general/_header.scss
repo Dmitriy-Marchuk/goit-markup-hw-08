@@ -38,26 +38,50 @@
 }
 
 .page-header {
-  position: relative;
-  // &__box {
-  //   position: relative;
-  // }
+  // position: relative;
+  &__box {
+    position: relative;
+  }
 }
 
 .menu-container {
   text-align: center;
-  background-color: violet;
+  background-color: #fff;
   height: 100vh;
+  padding-top: 48px;
+  padding-left: 40px;
 
   @media screen and (max-width: 767px) {
     &.is-open {
       display: block;
     }
     display: none;
-    position: fixed;
+    position: absolute;
+    overflow-y: scroll;
 
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
+  }
+}
+
+.site-nav {
+  text-align: start;
+  // margin-left: 40px;
+  // margin-top: 48px;
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+  }
+  &__link.current {
+    color: $accent-text-color;
+    position: relative;
   }
 }
