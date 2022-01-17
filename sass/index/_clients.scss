@@ -46,9 +46,13 @@
     transition: 250ms $animation-cubic;
   }
 
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
   &__link:hover,
   &__link:focus {
-    border: 1px solid #2196f3;
+    border-color: #2196f3;
     fill: $accent-text-color;
   }
 
