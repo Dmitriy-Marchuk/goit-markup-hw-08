@@ -1,8 +1,8 @@
 /* ФИЛЬТР СВЯЗАННЫЙ С RADIO BUTTONS */
-.radio-filter-list {
-  // display: flex;
-  // flex-wrap: wrap;
-}
+// .radio-filter-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .radio-filter-item {
   // margin-right: 30px;
@@ -19,9 +19,9 @@
     margin-right: 0px;
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
 
   &:hover,
   &:focus {
