@@ -435,8 +435,30 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__links-box {
+    margin-left: 76px;
+  }
+}
+
 .page-footer__container {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -454,6 +476,13 @@ ul {
 
 .page-footer__address-box {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .connecting-box {
+    margin-right: 89px;
+    margin-top: 5px;
+  }
 }
 
 .footer-list__item {
@@ -485,7 +514,6 @@ ul {
 
 /* FOOTER ПРИСОЕДИНЯЙТЕСЬ */
 .connecting-box {
-  margin-top: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -499,6 +527,12 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .connecting-box {
+    margin-top: 60px;
+  }
 }
 
 .connecting-box__title {
@@ -603,6 +637,17 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-box__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .subscribe-box__button-ico {
   margin-left: 10px;
   fill: #ffffff;
@@ -652,7 +697,6 @@ ul {
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
-  width: 100%;
   background-color: transparent;
   outline: none;
   -webkit-border-radius: 4px;
@@ -663,6 +707,18 @@ ul {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-box input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-box input {
+    width: 450px;
+  }
 }
 
 .subscribe-box input:focus,
@@ -721,6 +777,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
 .hero__button {
   display: inline-block;
   padding: 10px 32px;
@@ -759,8 +822,17 @@ ul {
   }
 }
 
-.studio-item {
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .studio-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .studio-item {
+    width: -webkit-calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 .studio-item__thumb {
@@ -799,6 +871,12 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .studio-item__title {
+    text-align: start;
+  }
+}
+
 .studio-item__text {
   color: #757575;
   font-size: 14px;
@@ -817,7 +895,7 @@ ul {
   margin-top: -94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-doing {
     display: none;
   }
@@ -915,6 +993,18 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-team__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-team__list {
     display: -webkit-box;
@@ -929,7 +1019,6 @@ ul {
 }
 
 .section-team__item {
-  width: 100%;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -937,8 +1026,26 @@ ul {
           border-radius: 0px 0px 4px 4px;
 }
 
-.section-team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .section-team__item {
+    width: 100%;
+  }
+  .section-team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-team__item {
+    width: -webkit-calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  .section-team__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .section-team__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1086,15 +1193,29 @@ ul {
 }
 
 .clients-item {
-  width: -webkit-calc((100% - 2 * 15px) / 2);
-  width: calc((100% - 2 * 15px) / 2);
   border: 1px solid #afb1b8;
   -webkit-border-radius: 4px;
           border-radius: 4px;
 }
 
-.clients-item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .clients-item {
+    width: -webkit-calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 15px) / 2);
+  }
+  .clients-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: -webkit-calc((100% - 2 * 15px) / 3);
+    width: calc((100% - 2 * 15px) / 3);
+  }
+  .clients-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients-item__link {
@@ -1157,12 +1278,46 @@ ul {
 }
 
 .modal {
-  position: relative;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 .modal__form {
@@ -1336,7 +1491,6 @@ ul {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   margin-right: 7px;
-  margin-left: 13px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1412,6 +1566,19 @@ ul {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .radio-buttons-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .radio-butons-list__item {
   margin-right: 8px;
   margin-bottom: 12px;
@@ -1444,17 +1611,46 @@ ul {
 }
 
 /* ФИЛЬТР СВЯЗАННЫЙ С RADIO BUTTONS */
+@media screen and (min-width: 768px) {
+  .radio-filter-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 .radio-filter-item {
-  margin-bottom: 30px;
-  width: 100%;
   border: 1px solid #eeeeee;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
 }
 
-.radio-filter-item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .radio-filter-item {
+    width: 100%;
+  }
+  .radio-filter-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .radio-filter-item {
+    width: -webkit-calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  .radio-filter-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .radio-filter-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .radio-filter-item:hover, .radio-filter-item:focus {

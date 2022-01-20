@@ -10,7 +10,12 @@
 }
 
 .studio-item {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
 
   &__thumb {
     display: flex;
@@ -39,6 +44,10 @@
     margin-bottom: 10px;
     margin-top: 0;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
 
   &__text {

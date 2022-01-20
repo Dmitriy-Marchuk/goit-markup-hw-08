@@ -1,22 +1,33 @@
 /* ФИЛЬТР СВЯЗАННЫЙ С RADIO BUTTONS */
-// .radio-filter-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.radio-filter-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .radio-filter-item {
+  border: 1px solid #eeeeee;
+  transition: 250ms $animation-cubic;
+
   // margin-right: 30px;
   margin-bottom: 30px;
 
   // width: 370px;
-  width: 100%;
-
-  border: 1px solid #eeeeee;
-
-  transition: 250ms $animation-cubic;
-
-  &:nth-child(3n) {
-    margin-right: 0px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   // &:nth-last-child(-n + 3) {

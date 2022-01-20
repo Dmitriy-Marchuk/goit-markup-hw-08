@@ -5,19 +5,36 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 768px) {
+    &__links-box {
+      margin-left: 76px;
+    }
+  }
+
   &__container {
     text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: flex-start;
     }
   }
 
-  &__links-box {
-  }
-
   &__address-box {
     margin-top: 20px;
+  }
+}
+
+// ПРИСОЕДИНЯЙТЕСЬ
+
+.connecting-box {
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+    margin-top: 5px;
   }
 }
 

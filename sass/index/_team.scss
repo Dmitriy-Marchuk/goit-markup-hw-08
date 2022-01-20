@@ -20,6 +20,10 @@
   }
 
   &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: space-between;
@@ -27,9 +31,20 @@
   }
 
   &__item {
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
     }
 
     background: $bg-color;

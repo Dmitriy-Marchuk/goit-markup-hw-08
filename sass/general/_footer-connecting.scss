@@ -1,6 +1,8 @@
 /* FOOTER ПРИСОЕДИНЯЙТЕСЬ */
 .connecting-box {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
   // margin-top: 12px;
   // margin-left: 70px;
 
