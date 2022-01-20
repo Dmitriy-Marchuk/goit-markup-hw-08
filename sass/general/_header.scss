@@ -76,7 +76,8 @@
   }
 }
 
-.header-phone-menu-box {
+// HEADER
+.header-logo-box {
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: space-between;
@@ -87,8 +88,6 @@
     flex-grow: 1;
   }
 }
-
-// HEADER
 
 .menu-container {
   @media screen and (max-width: 767px) {
@@ -126,17 +125,21 @@
   }
   @media screen and (min-width: 768px) {
     height: 80px;
+    display: flex;
     &__box {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-grow: 1;
     }
   }
 }
 
 .site-nav {
-  // margin-left: 40px;
-  // margin-top: 48px;
+  &__link.current {
+    position: relative;
+    color: $accent-text-color;
+  }
   @media screen and (max-width: 767px) {
     &__item {
       margin-bottom: 32px;
@@ -148,21 +151,41 @@
       letter-spacing: 0.02em;
       color: $primary-text-color;
     }
-    &__link.current {
-      position: relative;
-      color: $accent-text-color;
-    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+
+    &__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $primary-text-color;
+      transition: 250ms $animation-cubic;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &__link.current::before {
+      bottom: 0;
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: $accent-text-color;
+      border-radius: 2px;
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $accent-text-color;
+    }
   }
 }
-
-// .header-contact-box {
-//   display: flex;
-//   align-items: flex-end;
-// }
 
 .header-contact {
   @media screen and (max-width: 767px) {
@@ -179,6 +202,30 @@
       font-size: 24px;
       line-height: 28px;
       color: $secondary-text-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__link {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+      color: $secondary-text-color;
+      display: inline-flex;
+      align-items: center;
+      transition: 250ms $animation-cubic;
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $accent-text-color;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__icon {
+      fill: currentColor;
+      margin-right: 8px;
     }
   }
 }
