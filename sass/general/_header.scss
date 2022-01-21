@@ -84,7 +84,7 @@
     align-items: center;
     min-height: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-grow: 1;
   }
 }
@@ -185,6 +185,9 @@
       color: $accent-text-color;
     }
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .header-contact {
@@ -220,12 +223,26 @@
       color: $accent-text-color;
     }
 
-    &__item:not(:last-child) {
+    &__item:first-child {
       margin-bottom: 10px;
     }
     &__icon {
       fill: currentColor;
       margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // align-items: center;
+
+    &__item:first-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
   }
 }
