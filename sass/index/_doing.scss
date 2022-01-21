@@ -3,6 +3,7 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+
   margin-top: -94px;
 
   &__main-title {
@@ -23,6 +24,8 @@
 }
 
 .doing-item {
+  width: calc((100% - 4 * 15px) / 3);
+
   &__thumb {
     position: relative;
   }
