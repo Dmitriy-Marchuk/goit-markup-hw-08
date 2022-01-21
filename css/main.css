@@ -457,21 +457,17 @@ ul {
   }
 }
 
-/* FOOTER */
+/* FOOTER LOGO ADDRESS PHONE */
 .page-footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-footer__links-box {
-    margin-left: 76px;
+@media screen and (max-width: 1199px) {
+  .page-footer__container {
+    text-align: center;
   }
-}
-
-.page-footer__container {
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -496,10 +492,34 @@ ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__links-box {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__links-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    white-space: nowrap;
   }
 }
 
@@ -561,6 +581,17 @@ ul {
 @media screen and (max-width: 767px) {
   .connecting-box {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connecting-box {
+    margin-left: 70px;
+    margin-top: 12px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

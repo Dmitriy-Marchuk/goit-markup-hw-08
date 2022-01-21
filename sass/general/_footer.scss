@@ -1,18 +1,14 @@
-/* FOOTER */
+/* FOOTER LOGO ADDRESS PHONE */
 .page-footer {
   background-color: $bg-second-color;
-
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    &__links-box {
-      margin-left: 76px;
-    }
-  }
-
   &__container {
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -20,7 +16,21 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
+      flex-wrap: nowrap;
       align-items: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__links-box {
+      margin-left: 76px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__links-box {
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
     }
   }
 
