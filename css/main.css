@@ -860,8 +860,8 @@ ul {
 
 @media screen and (min-width: 768px) {
   .studio-item {
-    width: -webkit-calc((100% - 4 * 15px) / 2);
-    width: calc((100% - 4 * 15px) / 2);
+    width: -webkit-calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 15px) / 2);
   }
 }
 
@@ -1074,8 +1074,8 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-team__item {
-    width: -webkit-calc((100% - 4 * 15px) / 2);
-    width: calc((100% - 4 * 15px) / 2);
+    width: -webkit-calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 15px) / 2);
   }
   .section-team__item:nth-child(2n + 1) {
     margin-right: 30px;
@@ -1087,8 +1087,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section-team__item {
-    width: -webkit-calc((100% - 4 * 15px) / 4);
-    width: calc((100% - 4 * 15px) / 4);
+    width: -webkit-calc((100% - 8 * 15px) / 4);
+    width: calc((100% - 8 * 15px) / 4);
   }
   .section-team__item:not(:last-child) {
     margin-right: 30px;
@@ -1245,11 +1245,19 @@ ul {
 
 @media screen and (min-width: 768px) {
   .clients-item {
-    width: -webkit-calc((100% - 2 * 15px) / 3);
-    width: calc((100% - 2 * 15px) / 3);
+    width: -webkit-calc((100% - 4 * 15px) / 3);
+    width: calc((100% - 4 * 15px) / 3);
+    height: 92px;
   }
   .clients-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: -webkit-calc((100% - 12 * 15px) / 6);
+    width: calc((100% - 12 * 15px) / 6);
   }
 }
 
