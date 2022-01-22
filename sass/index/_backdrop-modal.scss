@@ -35,8 +35,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  @media screen and (max-width: 1199px) {
-    max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 
   // width: 528px;
@@ -167,12 +167,15 @@
   align-items: center;
   margin-top: 25px;
   font-size: 12px;
-  line-height: 14px;
-  // font-size: 14px;
-  // line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 12px;
+  }
 
   & a {
     color: $accent-text-color;
