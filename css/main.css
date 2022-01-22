@@ -1220,6 +1220,11 @@ ul {
   display: block;
 }
 
+.section-team img {
+  display: block;
+  width: 100%;
+}
+
 .team-box {
   padding-top: 30px;
   padding-bottom: 24px;
