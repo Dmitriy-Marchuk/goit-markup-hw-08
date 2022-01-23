@@ -134,7 +134,7 @@ ul {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding-top: 48px;
     padding-left: 40px;
@@ -439,7 +439,7 @@ ul {
   .header-mobile-box {
     z-index: 8;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
   }
 }
@@ -1866,7 +1866,9 @@ ul {
 }
 
 .radio-filter-item img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .radio-filter-thumb {
