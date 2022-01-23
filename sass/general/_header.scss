@@ -1,4 +1,13 @@
 // HEADER
+.header-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .header-logo-box {
   @media screen and (max-width: 767px) {
     display: flex;
@@ -8,33 +17,6 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-grow: 1;
-  }
-}
-
-.menu-container {
-  @media screen and (max-width: 767px) {
-    display: none;
-
-    &.is-open {
-      display: flex;
-    }
-
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding-top: 48px;
-    padding-left: 40px;
-    padding-bottom: 48px;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
