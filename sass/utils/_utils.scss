@@ -10,6 +10,11 @@ body {
   margin: 0 auto;
   height: 100%;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
